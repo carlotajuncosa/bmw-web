@@ -82,6 +82,29 @@ header {
   justify-content: space-between;
   border: 2px solid green;
 }
+header nav {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid green;
+}
+header nav .left {
+  padding: 10px 0;
+  border: 2px solid green;
+}
+header nav .left ul {
+  display: flex;
+  gap: 16px;
+}
+header nav .left ul li {
+  border: 2px solid red;
+}
+header nav .right {
+  padding: 10px 0;
+  border: 2px solid green;
+}
 
 /* PONGO ETILOS EN ESPERA PARA APLICARLOS CUANDO ORDENE CON BEM
 .header-image{
