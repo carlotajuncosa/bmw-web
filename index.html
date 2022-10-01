@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles.css" rel="stylesheet"/>
-    <link href="//db.onlinewebfonts.com/c/e9de4f4d373ef5c6d9cf52490816ff5d?family=BMW+Type+Web+Light+All" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
+    <div> espacio izquierdo</div>
+    <div> bloque central
     <header>
         <!-- <img style="z-index:1; width: 100vw;"src="https://www.bmw.es/content/dam/bmw/marketES/bmw_es/Campanas/ix/ST-Nuevo-X1.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1656054791190.jpg"
         alt="image new ix1"> -->
@@ -19,11 +20,25 @@
 
         <div 
         class="header-content">
-         <!-- nav + (icons+(logo+slogan)) <div><nav></nav></div> -->
+        <nav>
+         <ul class="mainMenu"style="position:absolute; top:25px; left:450px; display:flex; justify-content:space-evenly; width:350px">
+            <li class="menuOptions">Modelos</li>
+            <li class="menuOptions">Promociones</li>
+            <li class="menuOptions">Servicios</li>
+            <li class="menuOptions">Universo BMW</li>
+        </ul>
+        </nav> <!-- nav + (icons+(logo+slogan)) -->
+        
+        <div class="iconsMainMenu">
+            <i class="fi fi-br-search"></i>
+            <i class="fi fi-sr-user"></i>
+            <i class="fi fi-sr-marker"></i>
+        </div>
+
         <div class="main-title">
             <!-- H1 + H2 + Button --><h1>THE NEW iX1 & X1</h1></div>
         <div class="right-menu" styles="display: flex; justify-content= flex-end;"></div>
-            <div><!-- 4 iconos --></div>
+            
             <div class="logo-and-slogan" styles="display: flex; justify-content: column;">
                 <img class="logo" src="/BMW_White_Logo.png" alt="logobmw">
                 <p class="slogan">¿Te gusta conducir?</p>
@@ -48,6 +63,8 @@
         </div>
         <div class="white-footer">       
         </div>
-    </footer>  
+    </footer>
+</div>
+    <div> espacio derecho</div>  
 </body>
 </html>
