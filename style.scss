@@ -24,7 +24,7 @@
     text-decoration: none;
 } */
 body{
-    font-family: 'bmw', "BMW Type Web Light All", sans-serif;
+    font-family: /* 'bmw', "BMW Type Web Light All",*/ sans-serif;
 }
 
 header{
@@ -32,7 +32,11 @@ height: 400px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+background-image: url(https://www.bmw.es/content/dam/bmw/marketES/bmw_es/Campanas/ix/ST-Nuevo-X1.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1656054791190.jpg);
+background-position: center;
+background-size: cover;
 border: 2px solid green;
+
  nav {
     width: 85%;
     margin: 0 auto;
@@ -55,13 +59,77 @@ border: 2px solid green;
 
     .right{
         padding: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 16px;
         border: 2px solid green;
+
+        :last-child{
+            height: 40px;
+        }
     }     
  }
 }
 
+.header__prompt{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
+    h1{
+        font-size: 2.3em;
+        color: black;
+    }
 
+    a{
+        padding: 16px;
+        width: 190px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        text-align: center;
+        background-color: #2669d4;       
+    }
+
+    a:last-child{
+        color: #505050;
+        text-decoration: none;
+        font-weight: 500;
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid #4d4d4d;
+    }    
+}
+
+main{
+    padding: 80px 0 40px;
+    
+    .nav{
+        ul{
+           display: flex;
+           list-style: none;
+           gap: 20px;
+        
+           li{
+            padding: 8px;
+           /*  width:100%;
+            overflow: scroll; */
+
+           }
+           
+        }
+
+    }    
+}
+
+.main__news {
+    display: grid;
+    column-gap: 40px;
+    grid-template-areas: "a a a a";
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 16px;
+}
 
 /* PONGO ETILOS EN ESPERA PARA APLICARLOS CUANDO ORDENE CON BEM
 .header-image{
