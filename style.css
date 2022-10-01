@@ -6,6 +6,7 @@
 @import url(https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css);
 @import url(https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css);
 @import url(https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css);
+@import url(https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -76,7 +77,8 @@ body {
 }
 
 header {
-  height: 400px;
+  height: 700px;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,7 +169,7 @@ main .nav ul li {
   grid-template-areas: "a";
   align-items: center;
 }
-.main__news div {
+.main__news .main__image {
   text-items: center;
 }
 @media only screen and (min-width: 768px) {
