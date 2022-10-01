@@ -1,6 +1,25 @@
 /* import RESET */
 @import './reset.scss';
 
+$layout_bp_mobile: 320px;
+$layout_bp_tablet: 768px;
+$layout_bp_tablet_portrait: 992px;
+$layout_bp_desktop: 1200px;
+$layout_bp_desktop_xxl: 1440px;
+
+// SCSS Mixins
+@mixin tablet {
+  @media only screen and (min-width: #{$layout_bp_tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$layout_bp_desktop}) {
+    @content;
+  }
+}
+
 /* fonts import */
 /* @font-face {
     font-family: 'bmw';
@@ -24,7 +43,7 @@
     text-decoration: none;
 } */
 body{
-    font-family: /* 'bmw', "BMW Type Web Light All",*/ sans-serif;
+    font-family: /* 'bmw', "BMW Type Web Light All",*/ sans-serif;    
 }
 
 header{
@@ -103,13 +122,15 @@ border: 2px solid green;
 }
 
 main{
-    padding: 80px 0 40px;
+    padding: 80px 40px;
     
     .nav{
         ul{
            display: flex;
            list-style: none;
            gap: 20px;
+           width: 100%;
+           overflow-x: scroll;
         
            li{
             padding: 8px;
@@ -124,11 +145,25 @@ main{
 }
 
 .main__news {
+    width: 70%;
+    margin: 0 auto;
     display: grid;
-    column-gap: 40px;
-    grid-template-areas: "a a a a";
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 16px;
+    gap: 40px;
+    grid-template-areas: "a";
+    
+    align-items: center;
+
+    div{
+        text-items: center;
+    }
+    
+    @include tablet{
+        grid-template-areas: "a a";
+    }
+    @include desktop{
+        grid-template-areas: "a a a a";
+    } 
+   
 }
 
 /* PONGO ETILOS EN ESPERA PARA APLICARLOS CUANDO ORDENE CON BEM
