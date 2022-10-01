@@ -1,3 +1,61 @@
+/* import RESET */ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(//db.onlinewebfonts.com/c/e9de4f4d373ef5c6d9cf52490816ff5d?family=BMW+Type+Web+Light+All);
+@import url(https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css);
+@import url(https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css);
+@import url(https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* fonts import */
 /* @font-face {
     font-family: 'bmw';
@@ -5,108 +63,113 @@
     font-style: normal;
     font-weight: normal;
   } */
-@import url(//db.onlinewebfonts.com/c/e9de4f4d373ef5c6d9cf52490816ff5d?family=BMW+Type+Web+Light+All);
 /* icons import */
-@import url(https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css);
-@import url(https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css);
-@import url(https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css);
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
-
+/*Con el archivo de scs reset esto ya no es necesario
+ *{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+} */
 body {
-  margin: 0px;
   font-family: "bmw", "BMW Type Web Light All", sans-serif;
 }
 
-.header-image {
-  position: relative;
+header {
+  height: 400px;
   display: flex;
-  width: 100vw;
-}
-
-.header-content {
-  /* position:absolute;
-  top:10px;
-  left:10px; */
-  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-direction: row;
+  border: 2px solid green;
 }
 
-.main-title {
-  position: absolute;
-  top: 50px;
-  left: 40px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  font-size: 1.35em;
-  color: black;
-  text-shadow: 0 0 7px white;
+/* PONGO ETILOS EN ESPERA PARA APLICARLOS CUANDO ORDENE CON BEM
+.header-image{
+    position:relative; 
+    display:flex; 
+    width: 100vw;
 }
 
-.menuOptions {
-  font-size: small;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: white;
-  text-shadow: 0 0 7px #9fc9e2;
+.header__content{
+    /* position:absolute;
+    top:10px;
+    left:10px; ESTO ERA EL FINAL DE UN COMMENT!
+    display: flex; 
+    justify-content: space-between; 
+    flex-direction: row; 
 }
 
-.iconsMainMenu {
-  position: absolute;
-  top: 25px;
-  left: 40px;
-  color: white;
-  text-shadow: 0 0 7px rgb(129, 129, 129);
+.main-title{
+    position: absolute;
+    top:50px;
+    left:40px;
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: column;
+    font-size: 1.35em;
+    color: black;
+    text-shadow: 0 0 7px white;
 }
 
-.logo-and-slogan {
-  position: absolute;
-  top: 20px;
-  right: 50px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.menuOptions{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 7px #9fc9e2;
 }
 
-.logo {
-  width: 50px;
-  margin-left: 35px;
+.iconsMainMenu{
+position:absolute;
+top: 25px;
+left: 40px;
+color: white;
+text-shadow: 0 0 7px rgb(129, 129, 129);
 }
 
-.slogan {
-  font-size: small;
+.logo-and-slogan{
+    position: absolute;
+    top:20px;
+    right:50px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo{
+    width: 50px; 
+    margin-left: 35px;
 }
 
-main {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+.slogan{
+    font-size: small;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
+
+
+main{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.grey-footer {
-  background-color: #e6e6e6;
-  display: flex;
-  width: 100%;
-  height: 330px;
-  margin: 0px;
-}
+footer{
+    display:flex;
+    flex-direction: column;
 
-.white-footer {
-  background-color: white;
-  display: flex;
-  width: 100%;
-  height: 30px;
-  margin: 0px;
-}/*# sourceMappingURL=style.css.map */
+}
+.grey-footer{
+    background-color: 
+    #e6e6e6;
+    display: flex;
+    width:100%;
+    height:330px;
+    margin:0px;
+}
+.white-footer{
+    background-color: white;
+    display: flex;
+    width:100%;
+    height:30px;
+    margin:0px;
+} *//*# sourceMappingURL=style.css.map */

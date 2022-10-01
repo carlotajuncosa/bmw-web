@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="style.css" rel="stylesheet"/>
 </head>
-<body>
+<body class=background__display>
     <div> espacio izquierdo</div>
     <div> bloque central
     <header>
@@ -19,7 +19,7 @@
         class="header-image">
 
         <div 
-        class="header-content">
+        class="header__content">
         <nav>
          <ul class="mainMenu"style="position:absolute; top:25px; left:450px; display:flex; justify-content:space-evenly; width:350px">
             <li class="menuOptions">Modelos</li>
@@ -48,23 +48,60 @@
     </header>
 
     <main>
-        <div>
-            <!-- img+img inside each: h3 + button-->
-        </div>
-        <div>
-            <!-- COCHES div styles="display:flex flex-wrap:wrap" | series + div series types + border + general container (inside, each item: image + h4+p+p smaller) -->
-            <!-- 4 IMG VISITA VIRTUAL div styles="display:flex justify-content:space around flex-direction:row" (inside, each item: image + h2+p+p smaller)-->
-            <!-- 2 VIDEOS div styles="display:flex justify-content:space around flex-direction:row" -->
-            <!-- 4 CUADROS CON ICONOS div styles="display:flex justify-content:space-between" -->
-        </div>
+       <div class="main__series">
+        Series
+       </div>
+
+       <div class="main__nav">
+        Navegación principal</div>
+
+       <div class="main__news">
+        Noticias
+       </div>
+
+       <div class="main__videos">
+        Videos
+       </div>
+       
+       <div class="main__faqs">
+        FAQS
+       </div>
+       
+        
     </main>
     <footer>
-        <div class="grey-footer" width:="200px">
-        </div>
-        <div class="white-footer">       
-        </div>
+      <div class="footer__separator">
+        ______________
+      </div>
+
+      <div class="footer__columns">
+
+      </div>
     </footer>
+
+    <div class="legal">
+        Aviso legal
+    </div>
 </div>
+
     <div> espacio derecho</div>  
+    
 </body>
 </html>
+
+<!--  COMENTARIOS SOBRE EL MAIN
+    <div>
+             img+img inside each: h3 + button
+        </div>
+        <div>
+            COCHES div styles="display:flex flex-wrap:wrap" | series + div series types + border + general container (inside, each item: image + h4+p+p smaller) 
+             4 IMG VISITA VIRTUAL div styles="display:flex justify-content:space around flex-direction:row" (inside, each item: image + h2+p+p smaller)
+             2 VIDEOS div styles="display:flex justify-content:space around flex-direction:row" 
+         4 CUADROS CON ICONOS div styles="display:flex justify-content:space-between"
+        </div> -->
+
+<!--  COMENTARIOS SOBRE EL FOOTER
+    <div class="grey-footer" width:="200px">
+        </div>
+        <div class="white-footer">       
+        </div> -->

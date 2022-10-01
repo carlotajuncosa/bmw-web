@@ -1,3 +1,6 @@
+/* import RESET */
+@import './reset.scss';
+
 /* fonts import */
 /* @font-face {
     font-family: 'bmw';
@@ -5,6 +8,7 @@
     font-style: normal;
     font-weight: normal;
   } */
+
 @import url(//db.onlinewebfonts.com/c/e9de4f4d373ef5c6d9cf52490816ff5d?family=BMW+Type+Web+Light+All);
 
 /* icons import */
@@ -12,27 +16,39 @@
 @import url(https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css);
 @import url(https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css);
 
-*{
+/*Con el archivo de scs reset esto ya no es necesario
+ *{
     margin:0;
     padding:0;
     list-style: none;
     text-decoration: none;
-}
+} */
 body{
-    margin:0px;
     font-family: 'bmw', "BMW Type Web Light All", sans-serif;
 }
 
+header{
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border: 2px solid green;
+}
+
+
+
+
+/* PONGO ETILOS EN ESPERA PARA APLICARLOS CUANDO ORDENE CON BEM
 .header-image{
     position:relative; 
     display:flex; 
     width: 100vw;
 }
 
-.header-content{
+.header__content{
     /* position:absolute;
     top:10px;
-    left:10px; */
+    left:10px; ESTO ERA EL FINAL DE UN COMMENT!
     display: flex; 
     justify-content: space-between; 
     flex-direction: row; 
@@ -111,4 +127,4 @@ footer{
     width:100%;
     height:30px;
     margin:0px;
-}
+} */
